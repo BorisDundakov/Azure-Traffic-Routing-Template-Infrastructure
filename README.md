@@ -13,7 +13,7 @@ One of the VMs serves as a router between the other two, called _RouterVM_. Each
 
 The Routing VM has two network interface cards: one for talking to VM2 in SubnetA and the other for talking to VM3 in SubnetB.
 
-<h1> I. Project Infrastructure </h3>
+<h1> I. Project Infrastructure </h1>
 
 <h3> Project Schema </h3>
 
@@ -36,7 +36,8 @@ The Azure topology diagrams provide a visual representation of the configured VN
 ![VM3VMNIC](https://github.com/BorisDundakov/OneLiner/assets/71731579/e58ef4e5-4a7a-4051-bf35-ccdcc3237712)
 
 
-<h3> IV. SSH tests via the terminal </h3>
+<h1> II. SSH Connection</h1>
+<h3> SSH tests via the terminal </h3>
 
 The SSH tests demonstrate connectivity between different VMs using terminal commands.
 
@@ -44,11 +45,11 @@ The SSH tests demonstrate connectivity between different VMs using terminal comm
 
 ![sshVM3](https://github.com/BorisDundakov/OneLiner/assets/71731579/a772ca58-fd8f-4499-8284-46f9dad8a286)
 
-<h3> III. How to SSH via a DNS Name </h3>
-The provided script sets up DNS names for VM2 and VM3. VM3's DNS name <i>(vm3-dns)</i> resides in the <i>www.understandnetworking.com</i> private DNS Zone. This allows connection from RouterVM to VM3 using the private DNS Zone address and VM3's DNS Name.
+<h3> How to SSH via a DNS Name </h3>
+The provided script sets up DNS names for VM2 and VM3. VM2's DNS name <i>(vm2-dns)</i> resides in the <i>www.understandnetworking.com</i> private DNS Zone. This allows connection from RouterVM to VM2 using the private DNS Zone address and VM2's DNS Name.
 
 ![sshDNSName](https://github.com/BorisDundakov/OneLiner/assets/71731579/9e53ac28-fd3b-48f7-8292-8e0eccb1ed2d)
 
-<h3> IV. Tips </h3>
+<h1> III. Tips </h1>
 1. Remember to change the name and password of your VMs; the credentials in the script are just for demonstration. <br>
 2. For RDP and SSH access to RouterVM without exposing it through a public IP, consider using Azure Bastion.
