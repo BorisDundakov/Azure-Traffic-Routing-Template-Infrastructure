@@ -1,4 +1,4 @@
-""" Azure infrastructure:
+""" Azure infrastructure as a code (Iac) requirementss:
         - 3 VM's
         - One of the VM's acts a router between the other 2
         - Each of the other VM's is in a separate subnet
